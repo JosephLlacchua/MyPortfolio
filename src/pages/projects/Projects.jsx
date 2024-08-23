@@ -23,16 +23,15 @@ export const Projects = () => {
             title: 'Web Master',
             description: 'Web Master es una plataforma web intuitiva y fácil de usar que permite a las empresas publicar proyectos de software y a los desarrolladores freelance postularse para trabajar en ellos. Desarrollada con Vue, .NET, MySQL y Bootstrap, esta aplicación busca satisfacer la demanda de soluciones digitales de calidad y la necesidad de los desarrolladores freelance de encontrar proyectos para generar ingresos.',
             technologies: ['Vue', '.NET', 'MySQL', 'Bootstrap'],
-            repositoryLink: 'https://github.com/user/velouria',
-            demoLink: 'https://velouria-demo.com',
+            repositoryLink: 'https://github.com/WebMastersUPC/webmaster-app',
+            demoLink: 'https://webmasterupcapp.netlify.app/',
         },
         {
             imageSrcs: [matPlayOpen1, matPlayOpen2, matPlayOpen3, matPlayOpen4, matPlayOpen5, matPlayOpen6, matPlayOpen7],
             title: 'MathPlayOpen',
             description: 'MathPlayOpen es un juego educativo de matemáticas en 2D diseñado para ofrecer una experiencia interactiva, motivadora y personalizable. Desarrollado con Angular, TypeScript y JSON Fake API, este juego ayuda a los estudiantes a mejorar sus habilidades matemáticas de manera efectiva y divertida, abordando la falta de motivación y los métodos tradicionales de enseñanza monótonos.',
             technologies: ['Angular', 'TypeScript', 'JSON Fake API'],
-            repositoryLink: 'https://github.com/user/another-project',
-            demoLink: 'https://another-project-demo.com',
+            repositoryLink: 'https://github.com/OpenSourceWX52-2024/upc-pre-202401--si729-WX52-2SquareD-FrontEnd',
         },
     ];
 

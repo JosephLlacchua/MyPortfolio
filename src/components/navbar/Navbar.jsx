@@ -26,7 +26,7 @@ export const Navbar = () => {
     return (
         <nav
             className="flex justify-between items-center py-4 px-8 bg-background z-10 fixed top-0 left-0 right-0 shadow-md">
-            <div className="text-secondary text-2xl font-bold cursor-pointer">Upsex</div>
+            <div className="text-secondary text-2xl font-bold cursor-pointer">JL (ง'̀-'́)ง</div>
             <div className={`space-x-8 text-text hidden md:flex`}>
                 <a href="#home" className="hover:text-primary hover:transition-all">Inicio</a>
                 <a href="#about" className="hover:text-primary hover:transition-all">Sobre mi</a>
