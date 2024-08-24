@@ -70,8 +70,20 @@
   </a>
   <a href="https://www.linkedin.com/in/joseph-llacchua">
 <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" />
-  </a>
-<a href="https://yourportfolio.com" target="_blank">
+  </a>Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\josep\WebstormProjects\porfolio-josephllps> git merge origin/main
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+PS C:\Users\josep\WebstormProjects\porfolio-josephllps>
+
+
+
+
+<a href="https://josephllacchua.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Open%20Portfolio-%23007BFF?style=for-the-badge&logo=firefox&logoColor=white" height="35" alt="portfolio button" />
   </a>
 </div>
