@@ -10,7 +10,7 @@ const Contact = () => {
     });
 
     const copyEmail = () => {
-        const email = 'llacchuajoseph@gmail.com';
+        const email = 'josephllacchua123@gmail.com';
         navigator.clipboard.writeText(email).then(() => {
             alert("Email copied!: " + email);
         });
@@ -27,7 +27,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.send('service_xlx71oi', 'template_h2iqaeo', {
+        emailjs.send('service_lmnbg4s', 'template_nrnllxz', {
             ...formData,
             to_email: 'llacchuajoseph@gmail.com'
         }, 'R5qiWTO9P9VGIdpeh')
@@ -54,7 +54,7 @@ const Contact = () => {
                         <form className="flex flex-col space-y-4 w-full" onSubmit={handleSubmit}>
                             <div className="flex items-center justify-center md:justify-start mt-2">
                                 <div id="emailCopy"
-                                     className="bg-background border-none md:text-lg text-text text-center md:text-left">llacchuajoseph@gmail.com
+                                     className="bg-background border-none md:text-lg text-text text-center md:text-left">josephllacchua123@gmail.com
                                 </div>
                                 <button type="button" onClick={copyEmail} className="ml-4 text-white"><FaCopy/></button>
                             </div>

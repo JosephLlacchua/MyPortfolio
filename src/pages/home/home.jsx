@@ -1,5 +1,5 @@
 ﻿import pfp from '../../assets/Gatico.jpeg';
-//import cv from '../../assets/CV.pdf';
+import CV from '../../assets/CV.pdf';
 
 export const Home = () => {
     return (
@@ -20,7 +20,7 @@ export const Home = () => {
                             Contactame
                         </button>
                     </a>
-                    <a href={""} download="CV_Joseph_Llacchua.pdf">
+                    <a href={CV} download="CV_Joseph_Llacchua.pdf">
                         <button className='buttong mt-5 ml-4'>
                             Descargar CV
                         </button>

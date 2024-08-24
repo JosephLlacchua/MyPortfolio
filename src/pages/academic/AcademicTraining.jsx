@@ -14,13 +14,13 @@ export const AcademicTraining = () => {
                             Icon={FaUniversity}
                             date="2022 - Actualidad"
                             title="Universidad Peruana de Ciencias Aplicadas (UPC)"
-                            description="Ingeniería de Software - 6timo ciclo."
+                            description="Ingeniería de Software - 6timo ciclo"
                         />
                         <TimelineItem
                             Icon={SiUdemy}
                             date="2024 - Actualidad"
                             title="Udemy"
-                            description="Spring Framework 6 & Spring Boot 3."
+                            description="Spring Framework 6 & Spring Boot 3"
                         />
                         <TimelineItem
                             Icon={FaCertificate}
