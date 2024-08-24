@@ -71,7 +71,7 @@
   <a href="https://www.linkedin.com/in/joseph-llacchua">
 <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo" />
   </a>
-<a href="https://yourportfolio.com" target="_blank">
+<a href="https://josephllacchua.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Open%20Portfolio-%23007BFF?style=for-the-badge&logo=firefox&logoColor=white" height="35" alt="portfolio button" />
   </a>
 </div>
