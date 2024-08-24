@@ -1,6 +1,7 @@
 {
   "name": "porfolio-josephllps",
   "private": true,
+  "homepage": "https://josephllacchua.netlify.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

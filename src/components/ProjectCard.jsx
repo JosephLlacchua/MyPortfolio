@@ -16,6 +16,9 @@ const technologyIcons = {
     'MySQL': <div className='bg-blue-600 text-white px-3 py-1 rounded-full text-sm'>MySQL</div>,
     'Bootstrap': <div className='bg-purple-600 text-white px-3 py-1 rounded-full text-sm'>Bootstrap</div>,
     'JSON Fake API': <div className='bg-gray-700 text-white px-3 py-1 rounded-full text-sm'>JSON Fake API</div>,
+    'Spring': <div className='bg-green-500 text-white px-3 py-1 rounded-full text-sm'>Spring</div>,
+    'JWT': <div className='bg-gray-700 text-white px-3 py-1 rounded-full text-sm'>JWT</div>,
+    'Tailwind CSS': <div className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm'>Tailwind CSS</div>,
 };
 
 const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLink, demoLink }) => {
