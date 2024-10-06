@@ -52,11 +52,13 @@ const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLi
                         <FaGithub className='w-4 h-4'/>
                         <span>Code</span>
                     </a>
-                    <a href={demoLink} target="_blank" rel="noopener noreferrer"
-                       className='bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full flex items-center space-x-2'>
-                        <FaExternalLinkAlt className='w-4 h-4'/>
-                        <span>Demo</span>
-                    </a>
+                    {demoLink && (
+                        <a href={demoLink} target="_blank" rel="noopener noreferrer"
+                           className='bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-full flex items-center space-x-2'>
+                            <FaExternalLinkAlt className='w-4 h-4'/>
+                            <span>Demo</span>
+                        </a>
+                    )}
                 </div>
             </div>
         </div>
@@ -69,7 +71,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
     repositoryLink: PropTypes.string.isRequired,
-    demoLink: PropTypes.string.isRequired,
+    demoLink: PropTypes.string,
 };
 
 export default ProjectCard;

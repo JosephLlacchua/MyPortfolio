@@ -1,7 +1,24 @@
-﻿import pfp from '../../assets/Gatico.jpeg';
+﻿import { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
+import pfp from '../../assets/Gatico.jpeg';
 import CV from '../../assets/CV.pdf';
 
 export const Home = () => {
+    const typedElement = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(typedElement.current, {
+            strings: ["Ingeniero de Software", "Desarrollador Backend"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     return (
         <div id="home" className='w-screen h-screen bg-background overflow-hidden relative scroll-smooth'>
             <div className='flex flex-col md:flex-row justify-between items-center h-full mt-16'>
@@ -10,14 +27,17 @@ export const Home = () => {
                         ¡Bienvenidos a mi Portafolio! 👋🏼
                     </div>
 
-                    <div className='text-primary text-5xl  md:text-8xl font-bold mb-4 leading-tight'>
+                    <div className='text-primary text-5xl md:text-8xl font-bold mb-4 leading-tight'>
                         Joseph Llacchua
                     </div>
 
-                    <div className='text-primary text-2xl md:text-5xl mb-4'>Ingeniero de Software</div>
+                    <div className='text-primary text-2xl md:text-5xl mb-4'>
+                        Soy un <span ref={typedElement} className="typed-text"></span>
+                    </div>
+
                     <a href="#contact">
                         <button className='buttong mt-5'>
-                            Contactame
+                            Contáctame
                         </button>
                     </a>
                     <a href={CV} download="CV_Joseph_Llacchua.pdf">

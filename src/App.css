@@ -118,6 +118,10 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
     width: 60px;
 }
 
+.typed-text {
+    color: rgb(23 189 133 / var(--tw-text-opacity));
+}
+
 .scroll:before {
     border-bottom: 2px solid #adadad;
     border-left: 2px solid #adadad;

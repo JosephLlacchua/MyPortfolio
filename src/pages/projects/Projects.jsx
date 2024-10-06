@@ -21,17 +21,16 @@ import examify5 from '../../assets/Project-3/project_3.5.png';
 import examify6 from '../../assets/Project-3/project_3.6.png';
 import examify7 from '../../assets/Project-3/project_3.7.png';
 import examify8 from '../../assets/Project-3/project_3.8.png';
-import examify10  from '../../assets/Project-3/project_3.9.png';
-
+import examify10 from '../../assets/Project-3/project_3.9.png';
 
 export const Projects = () => {
     const [showMore] = useState(false);
 
     const projects = [
         {
-            imageSrcs: [examify1, examify2, examify3, examify4, examify5,examify6, examify7, examify8,examify10],
+            imageSrcs: [examify1, examify2, examify3, examify4, examify5, examify6, examify7, examify8, examify10],
             title: 'Examify',
-            description: 'Examify es una aplicación web diseñada para optimizar y mejorar la experiencia de exámenes tanto para profesores como para estudiantes. Permite a los profesores crear y gestionar exámenes de manera sencilla, mientras que los estudiantes pueden realizar exámenes y seguir su progreso de forma conveniente. Desarrollada con Angular, Spring, JWT, MySQL y Tailwind CSS, esta aplicación busca revolucionar la gestión de exámenes.',
+            description: 'Aplicación web que mejora la gestión de exámenes en línea, permitiendo a los profesores crear exámenes y a los estudiantes realizar un seguimiento de su progreso. Implementada con Angular y Spring Boot, la aplicación soporta autenticación con JWT y almacenamiento en MySQL.',
             technologies: ['Angular', 'Spring', 'JWT', 'MySQL', 'Tailwind CSS'],
             repositoryLink: 'https://github.com/JosephLlacchua/exam-management-system-backend',
             demoLink: 'https://examifyapp.netlify.app/',
@@ -47,7 +46,7 @@ export const Projects = () => {
             imageSrcs: [webMaster1, webMaster2, webMaster3, webMaster4, webMaster5],
             title: 'Web Master',
             description: 'Web Master es una plataforma web intuitiva y fácil de usar que permite a las empresas publicar proyectos de software y a los desarrolladores freelance postularse para trabajar en ellos. Desarrollada con Vue, .NET, MySQL y Bootstrap, esta aplicación busca satisfacer la demanda de soluciones digitales de calidad y la necesidad de los desarrolladores freelance de encontrar proyectos para generar ingresos.',
-            technologies: ['Vue', '.NET', 'MySQL', 'Bootstrap','JWT'],
+            technologies: ['Vue', '.NET', 'MySQL', 'Bootstrap', 'JWT'],
             repositoryLink: 'https://github.com/WebMastersUPC/webmaster-app',
             demoLink: 'https://webmasterupcapp.netlify.app/',
         },
