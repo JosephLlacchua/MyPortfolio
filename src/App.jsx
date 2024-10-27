@@ -9,12 +9,14 @@ import {Projects} from "./pages/projects/Projects.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import {Skills} from "./components/skills/Skills.jsx";
 import {AcademicTraining} from "./pages/academic/AcademicTraining.jsx";
+import {useState} from "react";
 
 function App() {
+    const [lang, setLang] = useState('en'); // Set default language to English
 
     return (
         <div >
-            <Navbar />
+            <Navbar lang={lang} setLang={setLang} />
             <Home />
             <AboutMe />
             <AnimatedStats />

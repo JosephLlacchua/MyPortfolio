@@ -1,33 +1,37 @@
-﻿// src/components/ProjectCard.jsx
-import PropTypes from 'prop-types';
+﻿import PropTypes from 'prop-types';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
+import { FaReact, FaNodeJs, FaDatabase, FaJsSquare, FaAngular, FaFire, FaVuejs, FaBootstrap, FaJava, FaDocker, FaKey, FaLeaf, FaCss3Alt, FaSwatchbook, FaCloud } from 'react-icons/fa';
 
 const technologyIcons = {
-    'React': <div className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm'>React</div>,
-    'Node.js': <div className='bg-green-500 text-white px-3 py-1 rounded-full text-sm'>Node.js</div>,
-    'MongoDB': <div className='bg-green-600 text-white px-3 py-1 rounded-full text-sm'>MongoDB</div>,
-    'Express': <div className='bg-gray-500 text-white px-3 py-1 rounded-full text-sm'>Express</div>,
-    'Angular': <div className='bg-red-500 text-white px-3 py-1 rounded-full text-sm'>Angular</div>,
-    'Firebase': <div className='bg-yellow-500 text-white px-3 py-1 rounded-full text-sm'>Firebase</div>,
-    'TypeScript': <div className='bg-blue-700 text-white px-3 py-1 rounded-full text-sm'>TypeScript</div>,
-    'Vue': <div className='bg-green-400 text-white px-3 py-1 rounded-full text-sm'>Vue</div>,
-    '.NET': <div className='bg-purple-500 text-white px-3 py-1 rounded-full text-sm'>.NET</div>,
-    'MySQL': <div className='bg-blue-600 text-white px-3 py-1 rounded-full text-sm'>MySQL</div>,
-    'Bootstrap': <div className='bg-purple-600 text-white px-3 py-1 rounded-full text-sm'>Bootstrap</div>,
-    'JSON Fake API': <div className='bg-gray-700 text-white px-3 py-1 rounded-full text-sm'>JSON Fake API</div>,
-    'Spring': <div className='bg-green-500 text-white px-3 py-1 rounded-full text-sm'>Spring</div>,
-    'JWT': <div className='bg-gray-700 text-white px-3 py-1 rounded-full text-sm'>JWT</div>,
-    'Tailwind CSS': <div className='bg-blue-500 text-white px-3 py-1 rounded-full text-sm'>Tailwind CSS</div>,
+    'React': <FaReact className='text-blue-500 w-6 h-6' />,
+    'Node.js': <FaNodeJs className='text-green-500 w-6 h-6' />,
+    'MongoDB': <FaDatabase className='text-green-600 w-6 h-6' />,
+    'Express': <FaJsSquare className='text-gray-500 w-6 h-6' />,
+    'Angular': <FaAngular className='text-red-500 w-6 h-6' />,
+    'Firebase': <FaFire className='text-yellow-500 w-6 h-6' />,
+    'TypeScript': <FaJsSquare className='text-blue-700 w-6 h-6' />,
+    'Vue': <FaVuejs className='text-green-400 w-6 h-6' />,
+    'MySQL': <FaDatabase className='text-blue-600 w-6 h-6' />,
+    'Bootstrap': <FaBootstrap className='text-purple-600 w-6 h-6' />,
+    'JSON Fake API': <FaJsSquare className='text-gray-700 w-6 h-6' />,
+    'Spring': <FaLeaf className='text-green-500 w-6 h-6' />,
+    'JWT': <FaKey className='text-gray-700 w-6 h-6' />,
+    'Tailwind CSS': <FaCss3Alt className='text-blue-500 w-6 h-6' />,
+    'Java': <FaJava className='text-red-600 w-6 h-6 ' />,
+    'Swagger': <FaSwatchbook className='text-green-700 w-6 h-6' />,
+    'Docker': <FaDocker className='text-blue-500 w-6 h-6' />,
+    'Azure': <FaCloud className='text-blue-500 w-6 h-6' />,
+    'Spring Boot': <FaLeaf className='text-green-500 w-6 h-6' />,
 };
 
-const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLink, demoLink }) => {
+const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLink, demoLink, logros }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageSrcs.length);
-        }, 3000); // Change image every 3 seconds
+        }, 3000);
         return () => clearInterval(interval);
     }, [imageSrcs.length]);
 
@@ -39,10 +43,19 @@ const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLi
             <div className="flex flex-col items-start w-full md:w-1/2 space-y-4 mt-4 md:mt-0 md:ml-6">
                 <h3 className='text-secondary text-4xl font-bold'>{title}</h3>
                 <p className='text-white'>{description}</p>
+                <div className='text-white'>
+                    <h4 className='text-2xl font-bold'>Logros:</h4>
+                    <ul className='list-disc list-inside'>
+                        {logros.map((logro, index) => (
+                            <li key={index}>{logro}</li>
+                        ))}
+                    </ul>
+                </div>
                 <div className='flex space-x-2'>
                     {technologies.map((tech, index) => (
-                        <div key={index}>
+                        <div key={index} className='flex items-center space-x-1'>
                             {technologyIcons[tech]}
+                            <span className='text-white'>{tech}</span>
                         </div>
                     ))}
                 </div>
@@ -50,7 +63,7 @@ const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLi
                     <a href={repositoryLink} target="_blank" rel="noopener noreferrer"
                        className='bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-full flex items-center space-x-2'>
                         <FaGithub className='w-4 h-4'/>
-                        <span>Code</span>
+                        <span>Código</span>
                     </a>
                     {demoLink && (
                         <a href={demoLink} target="_blank" rel="noopener noreferrer"
@@ -72,6 +85,7 @@ ProjectCard.propTypes = {
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
     repositoryLink: PropTypes.string.isRequired,
     demoLink: PropTypes.string,
+    logros: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectCard;

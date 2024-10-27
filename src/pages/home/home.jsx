@@ -1,7 +1,7 @@
 ﻿import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import pfp from '../../assets/Gatico.jpeg';
-import CV from '../../assets/CV.pdf';
+import CV from '../../assets/CV_Joseph_Llacchua.pdf';
 
 export const Home = () => {
     const typedElement = useRef(null);
@@ -40,7 +40,7 @@ export const Home = () => {
                             Contáctame
                         </button>
                     </a>
-                    <a href={CV} download="CV_Joseph_Llacchua.pdf">
+                    <a href={CV}  target="_blank" rel="noopener noreferrer">
                         <button className='buttong mt-5 ml-4'>
                             Descargar CV
                         </button>
