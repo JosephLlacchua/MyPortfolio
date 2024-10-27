@@ -5,5 +5,21 @@
     "projects": "Projects",
     "formation": "Formation",
     "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to my Portfolio! 👋🏼",
+    "iam": "I am a",
+    "typed1": "Backend Developer",
+    "typed2": "Software Engineer",
+    "contactMe": "Contact Me",
+    "downloadCV": "Download CV",
+    "available": "Available for Work"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "I am a <strong>Backend Software Engineer</strong> with experience in creating <strong>scalable and efficient solutions</strong> to solve complex problems in the tech field. My main stack includes <strong>Java, Spring Boot, MySQL, Docker, JWT</strong> and <strong>Angular</strong> on the frontend, giving me a comprehensive view of modern web application development.",
+    "description2": "Throughout my career, I have worked on both <strong>personal projects</strong> and <strong>team collaborations</strong>, applying agile methodologies like <strong>Scrum</strong> and ensuring code quality through <strong>unit testing with JUnit</strong>. My focus is on <strong>efficiency and scalability</strong>, and I am passionate about creating <strong>robust architectures</strong> that meet user needs.",
+    "description3": "Additionally, I always strive to <strong>stay updated</strong> on the latest tech trends and <strong>explore new tools</strong> that enhance the development experience and offer <strong>cutting-edge solutions</strong> to the companies I collaborate with.",
+    "experienceTitle": "Academic and Professional Experience"
   }
 }

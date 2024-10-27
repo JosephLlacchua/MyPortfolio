@@ -17,14 +17,14 @@ function App() {
     return (
         <div >
             <Navbar lang={lang} setLang={setLang} />
-            <Home />
-            <AboutMe />
-            <AnimatedStats />
-            <Projects />
+            <Home lang={lang} />
+            <AboutMe lang={lang} />
+            <AnimatedStats lang={lang} />
+            <Projects lang={lang} />
             <AcademicTraining />
-            <Contact />
+            <Contact lang={lang} />
             <Skills/>
-            <Footer/>
+            <Footer lang={lang} />
 
         </div>
     );

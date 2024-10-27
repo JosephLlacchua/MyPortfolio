@@ -5,5 +5,21 @@
     "projects": "Proyectos",
     "formation": "Formación",
     "contact": "Contacto"
+  },
+  "home": {
+    "welcome": "Bienvenidos a mi Portafolio! 👋🏼",
+    "iam": "Soy un",
+    "typed1": "Desarrollador Backend",
+    "typed2": "Ingeniero de software",
+    "contactMe": "Contáctame",
+    "downloadCV": "Descargar CV",
+    "available": "Disponible para Trabajar"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Soy un <strong>Ingeniero de Software Backend</strong> con experiencia en la creación de <strong>soluciones escalables y eficientes</strong> para resolver problemas complejos en el ámbito tecnológico. Mi stack principal incluye <strong>Java, Spring Boot, MySQL, Docker, JWT</strong> y <strong>Angular</strong> en el frontend, lo que me permite tener una visión completa del desarrollo de aplicaciones web modernas.",
+    "description2": "A lo largo de mi trayectoria, he trabajado tanto en <strong>proyectos personales</strong> como en <strong>colaboraciones en equipo</strong>, aplicando metodologías ágiles como <strong>Scrum</strong> y asegurando la calidad de mi código mediante <strong>pruebas unitarias con JUnit</strong>. Mi enfoque está en la <strong>eficiencia y la escalabilidad</strong>, y me apasiona crear <strong>arquitecturas robustas</strong> que se adapten a las necesidades de los usuarios.",
+    "description3": "Además, siempre busco <strong>mantenerme actualizado</strong> en las últimas tendencias tecnológicas y <strong>explorar nuevas herramientas</strong> que me permitan mejorar la experiencia de desarrollo y ofrecer <strong>soluciones de vanguardia</strong> a las empresas con las que colaboro.",
+    "experienceTitle": "Experiencia Académica y Profesional"
   }
 }

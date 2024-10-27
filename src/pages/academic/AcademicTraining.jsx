@@ -23,6 +23,12 @@ export const AcademicTraining = () => {
                             description="Spring Framework 6 & Spring Boot 3"
                         />
                         <TimelineItem
+                            Icon={SiUdemy}
+                            date="2024 - Actualidad"
+                            title="Udemy"
+                            description=" Microservicios con Spring Cloud y Spring Boot 2024"
+                        />
+                        <TimelineItem
                             Icon={FaCertificate}
                             date="2023"
                             title="Certiprof"
