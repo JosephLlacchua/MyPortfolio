@@ -1,7 +1,9 @@
-﻿import PropTypes from 'prop-types';
+﻿// src/components/ProjectCard.jsx
+import PropTypes from 'prop-types';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
-import { FaReact, FaNodeJs, FaDatabase, FaJsSquare, FaAngular, FaFire, FaVuejs, FaBootstrap, FaJava, FaDocker, FaKey, FaLeaf, FaCss3Alt, FaSwatchbook, FaCloud } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaDatabase, FaJsSquare, FaAngular, FaFire, FaVuejs, FaBootstrap, FaJava, FaDocker, FaKey, FaLeaf, FaCss3Alt, FaCloud } from 'react-icons/fa';
+import { SiKubernetes, SiSwagger,SiSpringsecurity } from 'react-icons/si';
 
 const technologyIcons = {
     'React': <FaReact className='text-blue-500 w-6 h-6' />,
@@ -19,13 +21,16 @@ const technologyIcons = {
     'JWT': <FaKey className='text-gray-700 w-6 h-6' />,
     'Tailwind CSS': <FaCss3Alt className='text-blue-500 w-6 h-6' />,
     'Java': <FaJava className='text-red-600 w-6 h-6 ' />,
-    'Swagger': <FaSwatchbook className='text-green-700 w-6 h-6' />,
+    'Swagger': <SiSwagger className='text-green-700 w-6 h-6' />,
     'Docker': <FaDocker className='text-blue-500 w-6 h-6' />,
     'Azure': <FaCloud className='text-blue-500 w-6 h-6' />,
     'Spring Boot': <FaLeaf className='text-green-500 w-6 h-6' />,
+    'Kubernetes': <SiKubernetes className='text-blue-500 w-6 h-6' />,
+    'Render': <FaCloud className='text-blue-500 w-6 h-6' />,
+    'Spring Security': <SiSpringsecurity className='text-green-500 w-6 h-6' />,
 };
 
-const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLink, demoLink, logros }) => {
+const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLink, demoLink }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
@@ -43,14 +48,6 @@ const ProjectCard = ({ imageSrcs, title, description, technologies, repositoryLi
             <div className="flex flex-col items-start w-full md:w-1/2 space-y-4 mt-4 md:mt-0 md:ml-6">
                 <h3 className='text-secondary text-4xl font-bold'>{title}</h3>
                 <p className='text-white'>{description}</p>
-                <div className='text-white'>
-                    <h4 className='text-2xl font-bold'>Logros:</h4>
-                    <ul className='list-disc list-inside'>
-                        {logros.map((logro, index) => (
-                            <li key={index}>{logro}</li>
-                        ))}
-                    </ul>
-                </div>
                 <div className='flex space-x-2'>
                     {technologies.map((tech, index) => (
                         <div key={index} className='flex items-center space-x-1'>
@@ -85,7 +82,6 @@ ProjectCard.propTypes = {
     technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
     repositoryLink: PropTypes.string.isRequired,
     demoLink: PropTypes.string,
-    logros: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectCard;

@@ -1,5 +1,4 @@
-﻿// src/pages/projects/Projects.jsx
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import ProjectCard from '../../components/ProjectCard';
 import webMaster1 from '../../assets/Project-1/project_1.1.png';
 import webMaster2 from '../../assets/Project-1/project_1.2.png';
@@ -21,76 +20,52 @@ export const Projects = () => {
 
     const projects = [
         {
-            imageSrcs: [],
+            imageSrcs: ["https://i.imgur.com/TW5hU7s.png","https://i.imgur.com/81RvK5O.png","https://i.imgur.com/R4uiYm8.png","https://i.imgur.com/7lI7P2Y.png","https://i.imgur.com/in3Q6jT.png"],
             title: 'InnControl',
-            description: 'Desarrollo de una solución de gestión integral para el sector hotelero, optimizando procesos administrativos y de atención al cliente. Migración de una arquitectura monolítica a microservicios, mejorando la escalabilidad y el rendimiento del sistema.',
-            technologies: ['Java', 'Spring Boot', 'JWT', 'Docker', 'Azure', 'Swagger', 'WebFlux', 'Kubernetes'],
-            logros: [
-                'Migración exitosa a microservicios para mejorar escalabilidad.',
-                'Implementación de Docker y Kubernetes para gestión y orquestación de contenedores.',
-                'Optimización de APIs con WebFlux y documentación con Swagger.'
-            ],
-            demoLink: 'https://inncontrolapp.netlify.app/',
-            repositoryLink : '  '
+            description: 'InnControl es una solución integral para el sector hotelero que optimiza los procesos administrativos y la atención al cliente. Esta plataforma ha sido migrada de una arquitectura monolítica a microservicios, lo que permite una escalabilidad y un rendimiento superiores. Utiliza tecnologías como Docker y Kubernetes para la gestión de contenedores, además de contar con APIs optimizadas documentadas con Swagger.',
+            technologies: ['Java', 'Spring Boot', 'Docker', 'Azure', 'Swagger', 'Kubernetes'],
+            repositoryLink : ' https://github.com/upc-pre-20242-si657-sw72-grupo5/inncontrol-microservices '
         },
         {
-            imageSrcs: [],
+            imageSrcs: ["https://i.imgur.com/1Xfx1fB.png","https://i.imgur.com/c5K68KG.png","https://i.imgur.com/KisQZGm.png","https://i.imgur.com/5bQvI9q.png","https://i.imgur.com/SnAjpBM.png","https://i.imgur.com/dHHfawX.png"],
             title: 'UniRider',
-            description: 'Desarrollo de un sistema web para carpooling entre estudiantes, facilitando la coordinación de viajes y reduciendo costos de transporte. Implementación basada en una arquitectura hexagonal para una clara separación entre el dominio y la infraestructura técnica.',
-            technologies: ['Java', 'Spring Boot', 'Arquitectura Hexagonal', 'Docker', 'Kubernetes', 'Swagger', 'Azure'],
-            logros: [
-                'Arquitectura hexagonal que facilita la adaptabilidad y flexibilidad del sistema.',
-                'Creación de un sistema eficiente para coordinación de viajes compartidos.',
-                'Despliegue continuo utilizando Docker y Kubernetes.'
-            ],
-            demoLink: 'https://uniriderapp.netlify.app/',
-            repositoryLink : '  '
+            description: 'UniRider facilita la coordinación de viajes compartidos entre estudiantes mediante un sistema web de carpooling. Su arquitectura hexagonal asegura una clara separación entre el dominio y la infraestructura técnica, permitiendo una gran flexibilidad y adaptabilidad. Esta aplicación se ha desplegado continuamente utilizando Docker y Kubernetes, optimizando así su disponibilidad.',
+            technologies: ['Java', 'Spring Boot','Spring Security', 'Docker', 'Swagger', 'Azure'],
+            demoLink: 'https://wx74-unirider.github.io/LandingPage/',
+            repositoryLink : 'https://github.com/WX74-UniRider/UniRider-Backend-UPC  '
         },
         {
-            imageSrcs: [],
+            imageSrcs: ["https://i.imgur.com/OEu4cMq.png","https://i.imgur.com/3mBuwaP.png" ,"https://i.imgur.com/KLbCCQA.png","https://i.imgur.com/ZklNe6k.png","https://i.imgur.com/BTKEC6e.png","https://i.imgur.com/2OjWOlV.png",],
             title: 'FromZeroApi',
-            description: 'Plataforma para conectar empresas con freelancers, permitiendo la publicación de ofertas laborales. Implementación con una arquitectura basada en Domain-Driven Design (DDD) para garantizar una separación robusta de dominios.',
-            technologies: ['Java', 'Spring Boot', 'DDD', 'Kotlin', 'MySQL', 'Docker', 'Render', 'JWT', 'Swagger'],
-            logros: [
-                'Implementación de DDD para mejorar la mantenibilidad y evolución del software.',
-                'APIs seguras con JWT, optimizando la protección de datos.',
-                'Integración eficiente con el frontend en Kotlin.'
-            ],
-            repositoryLink : '  '
+            description: 'FromZeroApi conecta empresas con freelancers, permitiendo la publicación de ofertas laborales. Esta plataforma se basa en Domain-Driven Design (DDD), garantizando una separación robusta de los distintos dominios. Además, implementa medidas de seguridad con JWT para proteger los datos y se integra eficientemente con el frontend desarrollado en Kotlin.',
+            technologies: ['Java', 'Spring Boot','Spring Security', 'MySQL', 'Docker', 'Render', 'Swagger'],
+            repositoryLink : 'https://github.com/upc-pre-202402-cc238-wx63-g1/FromZeroAPI '
         },
         {
-            imageSrcs: [],
+            imageSrcs: ["https://i.imgur.com/C5oheqm.png","https://i.imgur.com/KVD5MP1.png","https://i.imgur.com/KxcwPVu.png",
+            "https://i.imgur.com/TSsNEK1.png","https://i.imgur.com/LXmdTcx.png","https://i.imgur.com/f3YYw5k.png","https://i.imgur.com/TAjh8bv.png",
+            "https://i.imgur.com/RGNMY8q.png","https://i.imgur.com/YINXW9X.png","https://i.imgur.com/E58vap4.png"],
             title: 'InkaMarket',
-            description: 'Plataforma e-commerce que conecta agricultores peruanos con consumidores finales, mejorando la cadena de suministro. Implementación de una arquitectura de tres capas en Azure para mayor seguridad, escalabilidad y mantenimiento.',
+            description: 'InkaMarket es una plataforma de e-commerce que conecta agricultores peruanos con consumidores finales, mejorando la cadena de suministro. Su arquitectura de tres capas en Azure proporciona seguridad, escalabilidad y facilidad de mantenimiento. La integración de Spring Boot y MySQL garantiza un manejo eficiente y seguro de los datos, además de un despliegue optimizado en Azure que asegura alta disponibilidad.',
             technologies: ['Angular', 'Java', 'Spring Boot', 'MySQL', 'Azure'],
-            logros: [
-                'Arquitectura de tres capas en Azure, facilitando el mantenimiento y escalabilidad.',
-                'Integración de Spring Boot y MySQL para un manejo de datos eficiente y seguro.',
-                'Despliegue optimizado en Azure, asegurando alta disponibilidad.'
-            ],
-            repositoryLink : '  '
-
+            repositoryLink : 'https://docs.google.com/document/d/1qC8RiQzh840ELeJ7B_ItYt1WwT-K23x4YbliO2fP2EE/edit?tab=t.0 '
         },
         {
             imageSrcs: [examify1, examify2, examify3, examify4, examify5, examify6, examify7, examify8, examify10],
             title: 'Examify',
-            description: 'Aplicación web que mejora la gestión de exámenes en línea, permitiendo a los profesores crear exámenes y a los estudiantes realizar un seguimiento de su progreso. Implementada con Angular y Spring Boot, la aplicación soporta autenticación con JWT y almacenamiento en MySQL.',
-            technologies: ['Angular', 'Spring', 'JWT', 'MySQL', 'Tailwind CSS'],
+            description: 'Examify es una aplicación web diseñada para mejorar la gestión de exámenes en línea. Permite a los profesores crear exámenes y a los estudiantes seguir su progreso. Desarrollada con Angular y Spring Boot, la plataforma soporta autenticación con JWT y utiliza MySQL para el almacenamiento de datos.',
+            technologies: ['Angular', 'Spring Boot', 'Spring Security', 'MySQL', 'Tailwind CSS'],
             repositoryLink: 'https://github.com/JosephLlacchua/exam-management-system-backend',
             demoLink: 'https://examifyapp.netlify.app/',
-            logros :[]
         },
         {
             imageSrcs: [webMaster1, webMaster2, webMaster3, webMaster4, webMaster5],
             title: 'Web Master',
-            description: 'Web Master es una plataforma web intuitiva y fácil de usar que permite a las empresas publicar proyectos de software y a los desarrolladores freelance postularse para trabajar en ellos. Desarrollada con Vue, .NET, MySQL y Bootstrap, esta aplicación busca satisfacer la demanda de soluciones digitales de calidad y la necesidad de los desarrolladores freelance de encontrar proyectos para generar ingresos.',
-            technologies: ['Vue', '.NET', 'MySQL', 'Bootstrap', 'JWT'],
+            description: 'Web Master es una plataforma intuitiva que permite a las empresas publicar proyectos de software y a los desarrolladores freelance postularse a ellos. Desarrollada con Vue, .NET, MySQL y Bootstrap, esta aplicación busca satisfacer la creciente demanda de soluciones digitales de calidad, ofreciendo a los freelance una manera efectiva de encontrar proyectos y generar ingresos.',
+            technologies: ['Vue', '.NET', 'MySQL', 'Bootstrap', 'Spring Security'],
             repositoryLink: 'https://github.com/WebMastersUPC/webmaster-app',
             demoLink: 'https://webmasterupcapp.netlify.app/',
-            logros :[]
-
         },
-
     ];
 
     return (
@@ -109,7 +84,6 @@ export const Projects = () => {
                             technologies={project.technologies}
                             repositoryLink={project.repositoryLink}
                             demoLink={project.demoLink}
-                            logros={project.logros}
                             showMore={showMore}
                         />
                     ))}
