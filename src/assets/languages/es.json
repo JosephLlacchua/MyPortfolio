@@ -21,5 +21,79 @@
     "description2": "A lo largo de mi trayectoria, he trabajado tanto en <strong>proyectos personales</strong> como en <strong>colaboraciones en equipo</strong>, aplicando metodologías ágiles como <strong>Scrum</strong> y asegurando la calidad de mi código mediante <strong>pruebas unitarias con JUnit</strong>. Mi enfoque está en la <strong>eficiencia y la escalabilidad</strong>, y me apasiona crear <strong>arquitecturas robustas</strong> que se adapten a las necesidades de los usuarios.",
     "description3": "Además, siempre busco <strong>mantenerme actualizado</strong> en las últimas tendencias tecnológicas y <strong>explorar nuevas herramientas</strong> que me permitan mejorar la experiencia de desarrollo y ofrecer <strong>soluciones de vanguardia</strong> a las empresas con las que colaboro.",
     "experienceTitle": "Experiencia Académica y Profesional"
+  },
+  "academic": {
+    "title": "Experiencia Académica y Profesional",
+    "examifyTitle": "Examify: Plataforma de Gestión de Exámenes Escalable",
+    "examifyDescription": "Desarrollé una plataforma de gestión de exámenes en línea utilizando Angular para el frontend y Spring Boot para el backend. Esta aplicación se centró en la administración de exámenes y la gestión de roles de usuario, mejorando mis habilidades en la creación de arquitecturas escalables y en el diseño de bases de datos relacionales.",
+    "2squareDTitle": "2squareD: Innovación en Aprendizaje Matemático",
+    "2squareDDescription": "Lideré el desarrollo del backend de MathPlayOpen, una plataforma educativa que fomenta el aprendizaje matemático. Durante este proyecto, parte del curso de Open Source, adquirí experiencia práctica en Spring Boot, MongoDB, y en la creación de APIs RESTful eficientes.",
+    "fromZeroTitle": "From Zero: Conectando Empresas y Desarrolladores",
+    "fromZeroDescription": "Diseñé y desarrollé una aplicación web utilizando Vue.js y .NET que conecta empresas con freelancers en busca de oportunidades tecnológicas. El sistema cuenta con autenticación de usuarios y gestión de contenido, facilitando la colaboración eficiente entre ambas partes."
+  },
+  "stats": {
+    "average": "Promedio",
+    "projects": "Proyectos",
+    "cycle": "Ciclo"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "innControlTitle": "InnControl",
+    "innControlDescription": "InnControl es una solución integral para el sector hotelero que optimiza los procesos administrativos y la atención al cliente. Esta plataforma ha sido migrada de una arquitectura monolítica a microservicios, lo que permite una escalabilidad y un rendimiento superiores. Utiliza tecnologías como Docker y Kubernetes para la gestión de contenedores, y cuenta con APIs optimizadas documentadas con Swagger.",
+    "uniRiderTitle": "UniRider",
+    "uniRiderDescription": "UniRider facilita la coordinación de viajes compartidos entre estudiantes mediante un sistema web de carpooling. Su arquitectura hexagonal asegura una clara separación entre el dominio y la infraestructura técnica, permitiendo gran flexibilidad y adaptabilidad. Esta aplicación se ha desplegado continuamente utilizando Docker y Kubernetes, optimizando su disponibilidad.",
+    "fromZeroApiTitle": "FromZeroApi",
+    "fromZeroApiDescription": "FromZeroApi conecta empresas con freelancers, permitiendo la publicación de ofertas laborales. Esta plataforma se basa en Domain-Driven Design (DDD), garantizando una separación robusta de los distintos dominios. Además, implementa medidas de seguridad con JWT para proteger los datos y se integra eficientemente con el frontend desarrollado en Kotlin.",
+    "inkaMarketTitle": "InkaMarket",
+    "inkaMarketDescription": "InkaMarket es una plataforma de e-commerce que conecta agricultores peruanos con consumidores finales, mejorando la cadena de suministro. Su arquitectura de tres capas en Azure proporciona seguridad, escalabilidad y facilidad de mantenimiento. La integración de Spring Boot y MySQL garantiza un manejo eficiente y seguro de los datos, además de un despliegue optimizado en Azure que asegura alta disponibilidad.",
+    "examifyTitle": "Examify",
+    "examifyDescription": "Examify es una aplicación web diseñada para mejorar la gestión de exámenes en línea. Permite a los profesores crear exámenes y a los estudiantes seguir su progreso. Desarrollada con Angular y Spring Boot, la plataforma soporta autenticación con JWT y utiliza MySQL para el almacenamiento de datos.",
+    "webMasterTitle": "Web Master",
+    "webMasterDescription": "Web Master es una plataforma intuitiva que permite a las empresas publicar proyectos de software y a los desarrolladores freelance postularse a ellos. Desarrollada con Vue, .NET, MySQL y Bootstrap, esta aplicación busca satisfacer la creciente demanda de soluciones digitales de calidad, ofreciendo a los freelance una manera efectiva de encontrar proyectos y generar ingresos."
+  },
+  "academicTraining": {
+    "title": "Formación",
+    "timelineItems": [
+      {
+        "date": "2022 - Actualidad",
+        "title": "Universidad Peruana de Ciencias Aplicadas (UPC)",
+        "description": "Ingeniería de Software - 6timo ciclo"
+      },
+      {
+        "date": "2024 - Actualidad",
+        "title": "Udemy",
+        "description": "Spring Framework 6 & Spring Boot 3"
+      },
+      {
+        "date": "2024 - Actualidad",
+        "title": "Udemy",
+        "description": "Microservicios con Spring Cloud y Spring Boot 2024"
+      },
+      {
+        "date": "2023",
+        "title": "Certiprof",
+        "description": "Scrum Master: Metodologías Scrum"
+      }
+    ]
+  },
+  "contact": {
+    "title": "¿Tienes un proyecto en mente? Hablemos.",
+    "email": "josephllacchua123@gmail.com",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu Nombre",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "Tu Correo Electrónico",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Tu Mensaje",
+    "sendButton": "Enviar",
+    "successMessage": "¡Mensaje enviado con éxito!",
+    "errorMessage": "No se pudo enviar el mensaje, por favor inténtalo de nuevo más tarde.",
+    "copySuccess": "¡Correo copiado!: ",
+    "motivate" :"No dude en ponerse en contacto conmigo para cualquier consulta o colaboración."
+  },
+  "footer": {
+    "role": "Ingeniero de Software",
+    "rightsReserved": "Sólo unos pocos derechos reservados.",
+    "location": "Lima, Peru"
   }
 }

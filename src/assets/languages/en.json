@@ -8,7 +8,7 @@
   },
   "home": {
     "welcome": "Welcome to my Portfolio! 👋🏼",
-    "iam": "I am a",
+    "iam": "I'm a",
     "typed1": "Backend Developer",
     "typed2": "Software Engineer",
     "contactMe": "Contact Me",
@@ -21,5 +21,79 @@
     "description2": "Throughout my career, I have worked on both <strong>personal projects</strong> and <strong>team collaborations</strong>, applying agile methodologies like <strong>Scrum</strong> and ensuring code quality through <strong>unit testing with JUnit</strong>. My focus is on <strong>efficiency and scalability</strong>, and I am passionate about creating <strong>robust architectures</strong> that meet user needs.",
     "description3": "Additionally, I always strive to <strong>stay updated</strong> on the latest tech trends and <strong>explore new tools</strong> that enhance the development experience and offer <strong>cutting-edge solutions</strong> to the companies I collaborate with.",
     "experienceTitle": "Academic and Professional Experience"
+  },
+  "academic": {
+    "title": "Academic and Professional Experience",
+    "examifyTitle": "Examify: Scalable Exam Management Platform",
+    "examifyDescription": "Developed an online exam management platform using Angular for the frontend and Spring Boot for the backend. This application focused on exam administration and user role management, enhancing my skills in creating scalable architectures and designing relational databases.",
+    "2squareDTitle": "2squareD: Innovation in Mathematical Learning",
+    "2squareDDescription": "Led the backend development of MathPlayOpen, an educational platform that promotes mathematical learning. During this project, part of the Open Source course, I gained practical experience in Spring Boot, MongoDB, and creating efficient RESTful APIs.",
+    "fromZeroTitle": "From Zero: Connecting Companies and Developers",
+    "fromZeroDescription": "Designed and developed a web application using Vue.js and .NET that connects companies with freelancers seeking technological opportunities. The system features user authentication and content management, facilitating efficient collaboration between both parties."
+  },
+  "stats": {
+    "average": "Average",
+    "projects": "Projects",
+    "cycle": "Cycle"
+  },
+  "projects": {
+    "title": "Projects",
+    "innControlTitle": "InnControl",
+    "innControlDescription": "InnControl is a comprehensive solution for the hotel sector that optimizes administrative processes and customer service. This platform has been migrated from a monolithic architecture to microservices, allowing superior scalability and performance. It uses technologies such as Docker and Kubernetes for container management, and features optimized APIs documented with Swagger.",
+    "uniRiderTitle": "UniRider",
+    "uniRiderDescription": "UniRider facilitates carpooling coordination among students through a web-based carpooling system. Its hexagonal architecture ensures a clear separation between the domain and technical infrastructure, allowing great flexibility and adaptability. This application has been continuously deployed using Docker and Kubernetes, optimizing its availability.",
+    "fromZeroApiTitle": "FromZeroApi",
+    "fromZeroApiDescription": "FromZeroApi connects companies with freelancers, allowing job postings. This platform is based on Domain-Driven Design (DDD), ensuring a robust separation of different domains. Additionally, it implements security measures with JWT to protect data and integrates efficiently with the frontend developed in Kotlin.",
+    "inkaMarketTitle": "InkaMarket",
+    "inkaMarketDescription": "InkaMarket is an e-commerce platform that connects Peruvian farmers with end consumers, improving the supply chain. Its three-layer architecture in Azure provides security, scalability, and ease of maintenance. The integration of Spring Boot and MySQL ensures efficient and secure data handling, along with optimized deployment in Azure for high availability.",
+    "examifyTitle": "Examify",
+    "examifyDescription": "Examify is a web application designed to improve online exam management. It allows teachers to create exams and students to track their progress. Developed with Angular and Spring Boot, the platform supports JWT authentication and uses MySQL for data storage.",
+    "webMasterTitle": "Web Master",
+    "webMasterDescription": "Web Master is an intuitive platform that allows companies to post software projects and freelance developers to apply for them. Developed with Vue, .NET, MySQL, and Bootstrap, this application aims to meet the growing demand for quality digital solutions, offering freelancers an effective way to find projects and generate income."
+  },
+  "academicTraining": {
+    "title": "Academic Training",
+    "timelineItems": [
+      {
+        "date": "2022 - Present",
+        "title": "Universidad Peruana de Ciencias Aplicadas (UPC)",
+        "description": "Software Engineering - 6th cycle"
+      },
+      {
+        "date": "2024 - Present",
+        "title": "Udemy",
+        "description": "Spring Framework 6 & Spring Boot 3"
+      },
+      {
+        "date": "2024 - Present",
+        "title": "Udemy",
+        "description": "Microservices with Spring Cloud and Spring Boot 2024"
+      },
+      {
+        "date": "2023",
+        "title": "Certiprof",
+        "description": "Scrum Master: Scrum Methodologies"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Do you have a project in mind? Let's talk.",
+    "email": "josephllacchua123@gmail.com",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your Email",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your Message",
+    "sendButton": "Send",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Failed to send message, please try again later.",
+    "copySuccess": "Email copied!: ",
+    "motivate": "Feel free to contact me for any inquiries or collaborations."
+  },
+  "footer": {
+    "role": "Software Engineer",
+    "rightsReserved": "Only a few rights reserved.",
+    "location": "Lima, Peru"
   }
 }

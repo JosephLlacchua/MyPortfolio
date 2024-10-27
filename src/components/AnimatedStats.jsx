@@ -1,10 +1,12 @@
 ﻿import CountUp from 'react-countup';
+import { getText } from '../i18n.jsx';
+import PropTypes from "prop-types";
 
-export const AnimatedStats = () => {
+export const AnimatedStats = ({ lang }) => {
     const stats = [
-        { id: 1, title: 'Promedio', value: 18 },
-        { id: 2, title: 'Proyectos', value: 10 },
-        { id: 3, title: 'Ciclo', value: 6 },
+        { id: 1, title: getText(lang, 'stats', 'average'), value: 18 },
+        { id: 2, title: getText(lang, 'stats', 'projects'), value: 10 },
+        { id: 3, title: getText(lang, 'stats', 'cycle'), value: 6 },
     ];
 
     return (
@@ -23,6 +25,10 @@ export const AnimatedStats = () => {
             </div>
         </div>
     );
+};
+
+AnimatedStats.propTypes = {
+    lang: PropTypes.string.isRequired,
 };
 
 

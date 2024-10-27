@@ -20,20 +20,20 @@ export const AboutMe = ({ lang }) => {
                         <TimelineItem
                             Icon={FaTrophy}
                             date="2024"
-                            title="Examify: Plataforma de Gestión de Exámenes Escalable"
-                            description="Desarrollé una plataforma de gestión de exámenes en línea utilizando Angular para el frontend y Spring Boot para el backend. Esta aplicación se centró en la administración de exámenes y la gestión de roles de usuario, mejorando mis habilidades en la creación de arquitecturas escalables y en el diseño de bases de datos relacionales."
+                            title={getText(lang, 'academic', 'examifyTitle')}
+                            description={getText(lang, 'academic', 'examifyDescription')}
                         />
                         <TimelineItem
                             Icon={FaDatabase}
                             date="2024"
-                            title="2squareD: Innovación en Aprendizaje Matemático"
-                            description="Lideré el desarrollo del backend de MathPlayOpen, una plataforma educativa que fomenta el aprendizaje matemático. Durante este proyecto, parte del curso de Open Source, adquirí experiencia práctica en Spring Boot, MongoDB, y en la creación de APIs RESTful eficientes."
+                            title={getText(lang, 'academic', '2squareDTitle')}
+                            description={getText(lang, 'academic', '2squareDDescription')}
                         />
                         <TimelineItem
                             Icon={FaChartLine}
                             date="2023"
-                            title="From Zero: Conectando Empresas y Desarrolladores"
-                            description="Diseñé y desarrollé una aplicación web utilizando Vue.js y .NET que conecta empresas con freelancers en busca de oportunidades tecnológicas. El sistema cuenta con autenticación de usuarios y gestión de contenido, facilitando la colaboración eficiente entre ambas partes."
+                            title={getText(lang, 'academic', 'fromZeroTitle')}
+                            description={getText(lang, 'academic', 'fromZeroDescription')}
                         />
                     </div>
                 </div>

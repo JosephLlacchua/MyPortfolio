@@ -21,7 +21,7 @@ function App() {
             <AboutMe lang={lang} />
             <AnimatedStats lang={lang} />
             <Projects lang={lang} />
-            <AcademicTraining />
+            <AcademicTraining lang={lang}/>
             <Contact lang={lang} />
             <Skills/>
             <Footer lang={lang} />
