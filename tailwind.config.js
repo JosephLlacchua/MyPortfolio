@@ -4,6 +4,7 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 export default {
   content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
     './src/pages/**/*.{js,jsx,ts,tsx}',
     './src/components/**/*.{js,jsx,ts,tsx}',
   ],

@@ -1,28 +1,20 @@
 ﻿import { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import PropTypes from 'prop-types';
-import pfp from '../../assets/Gatico.jpeg';
-import CV from '../../assets/CV_Joseph_Llacchua.pdf';
-import { getText } from '../../i18n.jsx';
 
-export const Home = ({ lang }) => {
+const Home = ({ lang, getText, pfp, CV }) => {
     const [, setIsScrolled] = useState(false);
-
     const typedElement = useRef(null);
+
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
+            setIsScrolled(window.scrollY > 50);
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
     useEffect(() => {
         const typed = new Typed(typedElement.current, {
             strings: [getText(lang, 'home', 'typed1'), getText(lang, 'home', 'typed2')],
@@ -31,10 +23,8 @@ export const Home = ({ lang }) => {
             loop: true,
         });
 
-        return () => {
-            typed.destroy();
-        };
-    }, [lang]);
+        return () => typed.destroy();
+    }, [lang, getText]);
 
     return (
         <div id="home" className='w-screen h-screen bg-background overflow-hidden relative scroll-smooth'>
@@ -67,7 +57,7 @@ export const Home = ({ lang }) => {
 
                 <div
                     className='relative md:w-1/2 w-full h-1/2 md:h-full flex justify-center md:justify-end items-center'>
-                <div className='relative w-full h-full'>
+                    <div className='relative w-full h-full'>
                         <img loading="lazy" src={pfp} alt="Profile" className='w-full h-full object-cover md:object-cover z-0 -mt-16' />
                         <div className='absolute bottom-15 md:bottom-20 right-1/2 md:right-4 transform translate-x-1/2 md:translate-x-0 w-full flex justify-center'>
                             <div className="available-indicator border border-text">
@@ -82,6 +72,12 @@ export const Home = ({ lang }) => {
     );
 };
 
+
 Home.propTypes = {
     lang: PropTypes.string.isRequired,
+    getText: PropTypes.func.isRequired,
+    pfp: PropTypes.string.isRequired,
+    CV: PropTypes.string.isRequired,
 };
+
+export default Home;

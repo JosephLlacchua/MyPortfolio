@@ -73,7 +73,7 @@ export const Navbar = ({ lang, setLang }) => {
             </div>
             {isOpen && (
                 <div ref={menuRef}
-                     className="absolute top-16 left-0 right-0 bg-background2 text-white z-20 flex flex-col items-center md:hidden space-y-5 py-4 shadow-md">
+                     className="absolute top-11 left-0 right-0 bg-background2 text-white z-20 flex flex-col items-center md:hidden space-y-5 py-4 shadow-md">
                     <a href="#home" className="hover:text-primary hover:transition-all"
                        onClick={() => setIsOpen(false)}>{getText(lang, 'navbar', 'home')}</a>
                     <a href="#about" className="hover:text-primary hover:transition-all"

@@ -189,7 +189,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
     overflow: hidden;
     padding: 10px 24px;
     position: relative;
-    transition: all .3s cubic-bezier(.23, 1, .32, 1);
+    transition: all .3s cubic-bezier(.23,1,.32,1);
 }
 
 .buttong:before {
@@ -201,7 +201,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
     margin: auto;
     position: absolute;
     scale: 0;
-    transition: all .6s cubic-bezier(.23, 1, .32, 1);
+    transition: all .6s cubic-bezier(.23,1,.32,1);
     width: 90px;
     z-index: -1;
 }
@@ -639,8 +639,20 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
     }
 }
 input:focus, textarea:focus {
+    border-color: #17bd85;
     outline: none;
-    border-color: rgb(23, 189, 133);
-    box-shadow: 0 0 0 3px rgba(23, 189, 133, 0.5);
+}
+
+#projects {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}#projects img {
+     max-width: 100%;
+     height: auto;
+ }
+#projects > * {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
